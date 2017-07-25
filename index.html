@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+  <title> freeCodeCamp : Build a Tic Tac Toe by Ichi </title>
+  <meta charset = "UTF-8">
+  
+  <!-- link to font awsome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <!-- link to font -->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Leckerli+One" />
+    <!-- link to bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- ajax j query library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <style>
+    body{
+      background: url(https://res.cloudinary.com/lamuchy/image/upload/v1500280591/amusement-2456905_1920_bxlnvn.jpg);
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      overflow: hidden;
+    }
+    h1{
+      margin: 20px;
+      font: 'Gotham';
+      color: #9932CC;
+    }
+    table{
+      border: solid 20px #228B22;  
+        height: 394px;
+        width: 394px;
+    }
+    button {
+      background-color: #228B22;
+      
+      border: none;
+    }
+    #middleLine { 
+      border-top: solid 4px white;
+      border-bottom:solid 4px white;
+    }
+    .td2{
+      border-right: solid 4px white; 
+      border-left: solid 4px white;
+    }
+    td {
+      background-color: #228B22;
+      color: white;
+      text-align: center;
+      font-size: 50px;
+      height: 130px;
+      width: 130px;
+    }
+
+
+    footer{
+      text-align: center;
+      margin-top:20px;
+      color:#228B22;
+    }
+
+  </style>
+</head>
+  
+<body>
+  <div class = "container text-center">
+  <h1 class  = "text-center">Let's Play Tic Tac Toe </h1>
+    <button type="button" class="choice btn btn-warning" id = 'o'>o</button>
+    <button type="button" class="choice btn btn-info" id = 'x'>x</button>
+    <p class = "choice"> choose your button</p>
+    <button type="button" class="btn btn-danger" id = 'start'>Start</button>
+  </div>
+  <br>
+  <div>
+    <table align="center" >
+      <tr>
+        <td class = "section" id = '1' ><button class = "field"></button></td>
+        <td class = "section td2" id = '2'><button class = "field"></button></td>
+        <td class = "section" id = '3'><button class = "field"></button></td>
+      </tr>
+      <tr id= "middleLine">
+        <td class = "section" id = '4'><button class  = "field"></button></td>
+        <td class = "section td2" id = '5'><button class  = "field"></button></td>
+        <td class = "section" id = '6'><button class  = "field"></button></td>
+      </tr>
+      <tr>
+        <td class = "section" id = '7'><button class  = "field"></button></td>
+        <td class = "section td2" id = '8'><button class  = "field"></button></td>
+        <td class = "section" id = '9'><button class  = "field"></button></td>
+      </tr>
+    </table>
+  </div>
+  
+  <footer>
+    <p>created by LaMuchy 77700112</p>
+  </footer>
+
+  <script src="js/index.js"></script>
+
+</body>
+</html>
